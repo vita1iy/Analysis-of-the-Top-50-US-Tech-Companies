@@ -19,9 +19,20 @@ data.set_index("Company Name", inplace=True)
 #print first five rows to see the changes
 print(data.head())
 
-#Pie chart of "Sector" and the %
-sector_count = data['Sector'].value_counts()
-plt.pie(sector_count, labels=sector_count.index, autopct='%1.1f%%')
-plt.title('Pie Chart of Sector')
-plt.show()
+# create a figure with two subplots
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10,5))
 
+# Pie chart of "Sector" and the %
+sector_count = data['Sector'].value_counts()
+ax1.pie(sector_count, labels=sector_count.index, autopct='%1.1f%%', startangle=90, textprops={'fontsize': 5})
+ax1.set_title('Pie Chart of Sector', fontsize=12)
+
+# Pie chart of "HQ State"
+state_count = data['HQ State'].value_counts()
+ax2.pie(state_count, labels=state_count.index, autopct='%1.1f%%', startangle=90, textprops={'fontsize': 5})
+ax2.set_title('Pie Chart of HQ State', fontsize=12)
+
+# adjust spacing between subplots
+plt.subplots_adjust(wspace=0.5)
+
+plt.show()
