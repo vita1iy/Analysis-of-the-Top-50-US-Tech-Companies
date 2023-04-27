@@ -1,0 +1,10 @@
+'AAPL', 'MSFT', 'GOOG', 'AMZN', 'NVDA', 
+           'TSLA', 'META', 'AVGO', 'ORCL', 'CSCO', 
+           'CRM', 'ADBE', 'TXN', 'AMD', 'QCOM', 
+           'NFLX', 'INTC', 'INTU', 'IBM', 'AMAT', 
+           'BKNG', 'ADI', 'NOW', 'ADP', 'PYPL', 
+           'ABNB', 'FISV', 'LRCX', 'UBER', 'MU', 
+           'EQIX', 'ATVI', 'PANW', 'SNPS', 'CDNS', 
+           'KLAC', 'ANET', 'VMW', 'WDAY', 'FTNT', 
+           'SQ', 'SNOW', 'ROP', 'MCHP', 'ADSK', 
+           'GFS', 'IQV', 'MRVL', 'DELL', 'HPQ'
